@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'war'
+    // id 'war'
     // 버전을 안정적인 3.4.3으로 내렸습니다. (4.0.4는 아직 없습니다!)
     id 'org.springframework.boot' version '3.4.3'
     id 'io.spring.dependency-management' version '1.1.7'
@@ -25,7 +25,6 @@ repositories {
 dependencies {
     // 의존성 이름도 최신 표준에 맞게 수정했습니다.
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
